@@ -1,9 +1,11 @@
+/*applying css universally*/
 *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
 }
 
+/* applying CSS on the body of the DOM*/
 body{
     background-color: rgb(134, 122, 122);
     margin: auto;
@@ -12,6 +14,7 @@ body{
     
 }
 
+/* Applying CSS on the container*/
 .container{
     margin: 40px;
     padding: 20px;
@@ -34,7 +37,7 @@ body{
     
 }
 
-
+/* If we apply grid property to the container_1 automatically the child elements will have grid property*/
 .container_1{
     
     display: grid;
@@ -48,6 +51,8 @@ body{
     flex-direction:column;
 }
 
+
+/*address_fields is not a part of flex because it have to occupy the whole width*/
 .address_fields{
     grid-column: 1/span 2;
 }
@@ -61,7 +66,7 @@ label{
     margin-bottom: 7px;
 }
 
-
+/*applying style to the button element*/
 button{
     background-color: red;
     border: 2px solid black;
@@ -91,8 +96,16 @@ textarea{
     height: 70px;
 }
 
+/*Adding aaditional feature that is hover over the button element*/
 button:hover{
     background-color:white;
     color: black;
 
+}
+
+@media only screen and (max-width : 456px) {
+    .container_1{
+        
+        width: 100%;
+    } 
 }

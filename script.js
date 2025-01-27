@@ -1,4 +1,4 @@
-// Adding the event which is to performed as soon the button element is pressed.
+// Adding the event which is to be performed as soon the button element is pressed.
 
 
 document.addEventListener('DOMContentLoaded',()=> { 

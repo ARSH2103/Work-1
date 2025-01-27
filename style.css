@@ -22,7 +22,7 @@ body{
     max-height: 900px;
     max-width: 900px;
     border-radius: 10px;
-    grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+   
     
 }
 
@@ -40,8 +40,9 @@ body{
 
 /* If we apply grid property to the container_1 automatically the child elements will have grid property*/
 .container_1{
-
+    
     display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
     gap: 15px;   
     
 }
@@ -49,6 +50,7 @@ body{
 .input_fields {
     display: flex;
     flex-direction:column;
+    
 }
 
 
@@ -73,7 +75,7 @@ button{
     border: 2px solid black;
     border-radius: 4px;
     color: white;
-    padding: 10px;  
+    padding: 5px;  
 }
 
 #btn{
@@ -93,7 +95,7 @@ textarea{
     margin-top: 2px;
     border:2px solid black;
     border-radius: 5px;
-    height: 70px;
+    height: 50px;
 }
 
 /*Adding aaditional feature that is hover over the button element*/
